@@ -8,9 +8,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sympy import *
 
-# Define the symbol for sympy
-symbol_x = symbols('x')
 
+symbol_x = symbols('x')
 
 def calculate_and_plot(base_expr=cos(symbol_x),
                        development_point: float = 8,
