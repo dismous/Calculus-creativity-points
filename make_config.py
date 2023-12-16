@@ -19,7 +19,7 @@ class MyApp(QWidget):
         self.calculate_button.clicked.connect(self.calculate_and_plot_wrapper)
         self.setWindowIcon(QIcon('images/images.jpg'))
         layout = QVBoxLayout(self)
-        layout.addWidget(QLabel("Введіть функцію f(x):"))
+        layout.addWidget(QLabel("Введіть функцію f(x): "))
         layout.addWidget(self.base_expr_entry)
         layout.addWidget(QLabel("Точка розвитку [0]: "))
         layout.addWidget(self.development_point_entry)
