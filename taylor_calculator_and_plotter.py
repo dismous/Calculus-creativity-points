@@ -4,7 +4,6 @@ for a given function and plot it with matplotlib.
 """
 
 import math as m
-
 import matplotlib.pyplot as plt
 import numpy as np
 from sympy import *
@@ -17,6 +16,7 @@ def calculate_and_plot(development_point: float = 8,
                        base_expr=cos(x),
                        plot_range: int = 4,
                        draw_x_axis: bool = True):
+    """the main function of this module. calculates the nth taylor series"""
     plot_min_x, plot_max_x = development_point - plot_range, development_point + plot_range
     plot_points = 1000
     base_taylor_expr = Float(lambdify(x, base_expr)(development_point))
