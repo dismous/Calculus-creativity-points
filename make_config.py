@@ -1,8 +1,9 @@
 """
-execute this to input function and other config by hand over terminal
+main
 """
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLineEdit, QLabel
 from taylor_calculator_and_plotter import *
+from PyQt5.QtGui import QIcon
 
 class MyApp(QWidget):
     def __init__(self):
@@ -12,18 +13,19 @@ class MyApp(QWidget):
         self.development_point_entry = QLineEdit(self)
         self.grade_entry = QLineEdit(self)
         self.plot_range_entry = QLineEdit(self)
+        
 
         self.calculate_button = QPushButton('Calculate and Plot', self)
         self.calculate_button.clicked.connect(self.calculate_and_plot_wrapper)
-
+        self.setWindowIcon(QIcon('images/images.jpg'))
         layout = QVBoxLayout(self)
-        layout.addWidget(QLabel("f(x) = "))
+        layout.addWidget(QLabel("Введіть функцію f(x):"))
         layout.addWidget(self.base_expr_entry)
-        layout.addWidget(QLabel("development point [0]: "))
+        layout.addWidget(QLabel("Точка розвитку [0]: "))
         layout.addWidget(self.development_point_entry)
-        layout.addWidget(QLabel("grade [4]: "))
+        layout.addWidget(QLabel("Ступінь [4]: "))
         layout.addWidget(self.grade_entry)
-        layout.addWidget(QLabel("plot range [3]: "))
+        layout.addWidget(QLabel("Діапазон побудови [3]: "))
         layout.addWidget(self.plot_range_entry)
         layout.addWidget(self.calculate_button)
 
