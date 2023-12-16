@@ -1,6 +1,7 @@
 """
 This module contains a function that calculates the nth Taylor series
 for a given function and plots it.
+git: https://github.com/dismous/Calculus-creativity-points
 """
 
 import math
