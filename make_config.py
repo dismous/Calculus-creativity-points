@@ -2,7 +2,7 @@
 main
 """
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLineEdit, QLabel
-from taylor_calculator_and_plotter import *
+from taylor_calculator import *
 from PyQt5.QtGui import QIcon
 from sympy import sympify
 from sympy import *

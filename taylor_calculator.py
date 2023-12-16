@@ -1,6 +1,6 @@
 """
 This module contains a function that calculates the nth Taylor series
-for a given function and plots it using matplotlib.
+for a given function and plots it.
 """
 
 import math
