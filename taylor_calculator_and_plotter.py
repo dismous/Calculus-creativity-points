@@ -1,5 +1,6 @@
 """
-cre
+contains the function which will calculate the nth taylor series
+for a given function and plot it with matplotlib.
 """
 
 import math as m
